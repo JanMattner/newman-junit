@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="MyTest" time="0.319">
+  <testsuite name="TheTest" id="a0c5fff1-d0e6-4d5c-8892-476c9d328bc8" tests="3" time="0.319">
+    <testcase name="response status to be something" time="0.319">
+      <failure type="AssertionFailure" message="expected response to have status code 201 but got 200" object="{&quot;name&quot;:&quot;AssertionError&quot;,&quot;index&quot;:0,&quot;message&quot;:&quot;expected response to have status code 201 but got 200&quot;,&quot;stack&quot;:&quot;AssertionError: expected response to have status code 201 but got 200\n   at Object.eval sandbox-script.js:1:1)&quot;}"/>
+    </testcase>
+    <testcase name="with expect and chaijs" time="0.319">
+      <failure type="AssertionFailure" message="expected 'foo bar' to include 'nope'" object="{&quot;name&quot;:&quot;AssertionError&quot;,&quot;index&quot;:1,&quot;message&quot;:&quot;expected 'foo bar' to include 'nope'&quot;,&quot;stack&quot;:&quot;AssertionError: expected 'foo bar' to include 'nope'\n   at Object.eval sandbox-script.js:2:1)&quot;}"/>
+    </testcase>
+    <testcase name="response body" time="0.319">
+      <failure type="AssertionFailure" message="expected response body json at &quot;address.street&quot; to contain 'Kulas something' but got 'Kulas Light'" object="{&quot;name&quot;:&quot;AssertionError&quot;,&quot;index&quot;:2,&quot;message&quot;:&quot;expected response body json at \&quot;address.street\&quot; to contain 'Kulas something' but got 'Kulas Light'&quot;,&quot;stack&quot;:&quot;AssertionError: expected response body json at \&quot;address.street\&quot; to contain 'Kulas something' but got 'Kulas Light'\n   at Object.eval sandbox-script.js:3:1)&quot;}"/>
+    </testcase>
+  </testsuite>
+</testsuites>

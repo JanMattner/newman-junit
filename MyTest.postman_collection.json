@@ -1,0 +1,56 @@
+{
+	"info": {
+		"_postman_id": "5ba14ef8-8482-4495-acd4-5e3368f047c4",
+		"name": "MyTest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "TheTest",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "ddb54ea9-11ff-400f-bb55-9f612df0e4b1",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"response status to be something\", function(){",
+							"    pm.response.to.have.status(201);",
+							"})",
+							"",
+							"pm.test(\"with expect and chaijs\", function(){",
+							"    pm.expect(\"foo bar\").to.contain(\"nope\");",
+							"})",
+							"",
+							"pm.test(\"response body\", function(){",
+							"    pm.response.to.have.jsonBody();",
+							"    pm.response.to.have.jsonBody(\"id\", 1);",
+							"    pm.response.to.have.body(/Kulas/);",
+							"    pm.response.to.have.jsonBody(\"address.street\", \"Kulas something\");",
+							"})"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://jsonplaceholder.typicode.com/users/1",
+					"protocol": "https",
+					"host": [
+						"jsonplaceholder",
+						"typicode",
+						"com"
+					],
+					"path": [
+						"users",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
